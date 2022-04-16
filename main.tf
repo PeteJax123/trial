@@ -17,7 +17,7 @@ provider "azurerm" {
 }
 
 resource "azurerm_resource_group" "myresourcegroup" {
-  name     = "chetan1"
+  name     = "chetannew1"
   location = "canadaeast"
 
   tags = {
