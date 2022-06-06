@@ -10,7 +10,7 @@ terraform {
 terraform {
   backend "remote" {
     hostname = "app.terraform.io"
-    organization = "chetan"
+    organization = "trial-test"
 
     workspaces {
       name = "june-06-WS-03"
