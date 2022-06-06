@@ -21,14 +21,14 @@ terraform {
 provider "azurerm" {
   features{}
   
-  subscription_id = "c614835e-9b30-4377-8676-159532c4a446"
-  tenant_id = "7a4d8448-3ab0-4c53-85f5-4f98b0e89d44"
-  client_id = "113aed03-3be9-4eb5-b55d-c01be05c4f76"
-  client_secret = "UnJ8Q~m5cZEQIJyHuw~FeLStZowqinXUJBGGnaqR"
+  subscription_id = "2d383b10-41b4-4814-a1b5-2b3d9946dc1b"
+  tenant_id = "58a5f423-d654-4713-9407-dd52acaeee23"
+  client_id = "01026030-be41-4e99-9f34-9f939a14bf47"
+  client_secret = "u-R8Q~9PYaUOlH4EMvSKVISTfRvG41MoEVAKPajc"
 }
 
 resource "azurerm_resource_group" "myresourcegroup" {
-  name     = "chet789"
+  name     = "June-TFE"
   location = "canadaeast"
 
   tags = {
