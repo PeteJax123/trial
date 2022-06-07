@@ -7,6 +7,17 @@ terraform {
   }
 }
 
+terraform {
+  backend "remote" {
+    hostname = "app.terraform.io"
+    organization = "trial-test"
+
+    workspaces {
+      name = "june-06-WS-03"
+    }
+  }
+}
+
 provider "azurerm" {
   features{}
   
@@ -17,7 +28,7 @@ provider "azurerm" {
 }
 
 resource "azurerm_resource_group" "myresourcegroup" {
-  name     = "June-Seven-One"
+  name     = "June-TFC-Org-TWO"
   location = "canadaeast"
 
   tags = {
