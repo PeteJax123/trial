@@ -9,8 +9,8 @@ terraform {
 
 terraform {
   backend "remote" {
-    hostname = "app.terraform.io"
-    organization = "trial-test"
+    hostname = "tfe.eastus.cloudapp.azure.com"
+    organization = "DanielTest"
 
     workspaces {
       name = "june-06-WS-03"
@@ -28,7 +28,7 @@ provider "azurerm" {
 }
 
 resource "azurerm_resource_group" "myresourcegroup" {
-  name     = "June-TFC-Org-TWO"
+  name     = "June-TFC-Org-THREE"
   location = "canadaeast"
 
   tags = {
